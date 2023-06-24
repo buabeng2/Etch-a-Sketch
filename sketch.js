@@ -30,7 +30,7 @@ function ResetGrid() {
 function GridSize() {
     let grid_size = 16;
     do {
-        grid_size = Number(prompt("How big would you like the grid? Only one number is needed as the grid will a square (e.g 64)"));
+        grid_size = Number(prompt("How big would you like the grid? Only one number is needed as the grid will a square (e.g 64). The max is 100"));
     } while(grid_size < 1 || grid_size >100);
     ResetGrid();
     let total_squares = Math.pow(grid_size,2);
